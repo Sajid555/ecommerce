@@ -39,6 +39,9 @@
     @foreach($categry as $cats)
               <li><a href="{{url('/main')}}/<?php echo "$cats->id" ?>"><?php echo "{$cats->cat_name}"?></a></li>
               @endforeach
+               @foreach($categry as $cats)
+              <li><a href="{{url('/main')}}/<?php echo "$cats->id" ?>"><?php echo "{$cats->cat_name}"?></a></li>
+              @endforeach
             </ul>
           </div>
         </div>
